@@ -1,5 +1,6 @@
 body {
   background-color: #151515;
+
 }
 
 .navbar {
@@ -45,4 +46,10 @@ a {
   font-size: 100px;
   text-align: center;
   color: white;
+}
+
+/* joke page start */
+
+.joke-button {
+  width: 100px;
 }
