@@ -1,21 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>R&M Interactive Wikipedia</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rick and Morty App</title>
+    <link rel="stylesheet" href="character.html">
+    <link rel="stylesheet" href="dimension.html">
+    <link rel="stylesheet" href="episodes.html">
+    <link rel="stylesheet" href="gender.html">
+    <link rel="stylesheet" href="planet.html">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
 
-<div id="characters">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class ="display-4 jumbo-text title">Rick and Morty Wiki</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">R&M Wikipedia</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Character</a>
+                        <a class="nav-item nav-link" href="#">Dimension</a>
+                        <a class="nav-item nav-link" href="#">Episodes</a>
+                        <a class="nav-item nav-link" href="#">Gender</a>
+                        <a class="nav-item nav-link" href="#">Planet</a>
+                    </div>
+                </div>
+            </div>
+    </nav>
 
-</div>
-
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"></script>
-<script type="text/javascript" src="R&M.js"></script>
-
+    <div class="card-deck">
+        <div class="container">
+            <div class="row">
+                <div class="card col-4 card-left">
+                    <img class="card-image-top" src="http://lorempixel.com/200/200" alt="placeholder-person">
+                    <h3 class="card-title">Armothy</h3>
+                    <p class="card-text">id 25-created 2 years ago</p>
+                    <div class="card-body">
+                        <p class="card-text">STATUS: </p><hr>
+                        <p class="card-text">SPECIES: </p><hr>
+                        <p class="card-text">GENDER: </p><hr>
+                        <p class="card-text">ORIGIN: </p><hr>
+                        <p class="card-text">LAST<br>LOCATION: </p><hr>
+                    </div>
+                </div>
+                <div class="card col-4">
+                    <img class="card-image-top" src="http://lorempixel.com/200/200" alt="placeholder-person">
+                    <h3 class="card-title">Armothy</h3>
+                    <p class="card-text">id 25-created 2 years ago</p>
+                    <div class="card-body">
+                        <p class="card-text">STATUS: </p><hr>
+                        <p class="card-text">SPECIES: </p><hr>
+                        <p class="card-text">GENDER: </p><hr>
+                        <p class="card-text">ORIGIN: </p><hr>
+                        <p class="card-text">LAST<br>LOCATION: </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="card col-4 card-right">
+                    <img class="card-image-top" src="http://lorempixel.com/200/200" alt="placeholder-person">
+                    <h3 class="card-title">Armothy</h3>
+                    <p class="card-text">id 25-created 2 years ago</p>
+                    <div class="card-body">
+                        <p class="card-text">STATUS: </p><hr>
+                        <p class="card-text">SPECIES: </p><hr>
+                        <p class="card-text">GENDER: </p><hr>
+                        <p class="card-text">ORIGIN: </p><hr>
+                        <p class="card-text">LAST<br>LOCATION: </p><hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-4 card-left">
+                    <img class="card-image-top" src="http://lorempixel.com/200/200" alt="placeholder-person">
+                    <div class="card-body">
+                        <h3 class="card-title">Armothy</h3>
+                        <p class="card-text">id 25-created 2 years ago</p>
+                        <p class="card-text">STATUS: </p><hr>
+                        <p class="card-text">SPECIES: </p><hr>
+                        <p class="card-text">GENDER: </p><hr>
+                        <p class="card-text">ORIGIN: </p><hr>
+                        <p class="card-text">LAST<br>LOCATION: </p><hr>
+                    </div>
+                </div>
+                <div class="card col-4">
+                    <img class="card-image-top" src="http://lorempixel.com/200/200" alt="placeholder-person">
+                    <div class="card-body">
+                        <h3 class="card-title">Armothy</h3>
+                        <p class="card-text">id 25-created 2 years ago</p>
+                        <p class="card-text">STATUS: </p><hr>
+                        <p class="card-text">SPECIES: </p><hr>
+                        <p class="card-text">GENDER: </p><hr>
+                        <p class="card-text">ORIGIN: </p><hr>
+                        <p class="card-text">LAST<br>LOCATION: </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="card col-4 card-right">
+                    <img class="card-image-top" src="http://lorempixel.com/200/200" alt="placeholder-person">
+                    <div class="card-body">
+                        <h3 class="card-title">Armothy</h3>
+                        <p class="card-text">id 25-created 2 years ago</p>
+                        <p class="card-text">STATUS: </p><hr>
+                        <p class="card-text">SPECIES: </p><hr>
+                        <p class="card-text">GENDER: </p><hr>
+                        <p class="card-text">ORIGIN: </p><hr>
+                        <p class="card-text">LAST<br>LOCATION: </p><hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+
 </html>

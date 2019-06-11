@@ -1,0 +1,55 @@
+body {
+  background-color: #151515;
+
+}
+
+.navbar {
+  background-color: #151515;
+  margin-top: 0%;
+  margin-bottom: 30px;
+}
+.navbar-toggler {
+  color: white !important;
+}
+a {
+  color: white;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #CEF6D8;
+  height: 572px;
+  width: 100%px;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
+
+.card-image-top {
+  height: 250px;
+}
+
+.jumbotron {
+  background-image: url(../images/rick-morty-main-994x400.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-bottom: 0%;
+}
+
+.jumbo-text {
+  font-size: 100px;
+  text-align: center;
+  color: white;
+}
+
+/* joke page start */
+
+.joke-button {
+  width: 100px;
+}
