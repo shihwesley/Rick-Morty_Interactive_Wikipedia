@@ -78,4 +78,24 @@ $(document).ready(function(){
             }
         })
     }
+    //joke   Work in progress
+     $card.append(`<img class="card-image-top" src="${char_img}" alt="${char_name}">`);
+     var char_img = response.results[j].image;
+
+    for (let i = 0; i < 4; i++ ){
+        var char_img = $("<div>");
+        char_img.attr("class")
+        $(".text").append(`<li class="list-group-item">${data[i]}</li>`)
+    }
+
+
+    function setNewImage()
+    {
+        document.getElementById(img).src ="images"
+    }
+    function append(){
+        $("#").append("<img id")
+    }
+
+
 })

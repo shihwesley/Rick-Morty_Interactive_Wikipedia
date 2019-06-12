@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Document</title>
 </head>
 
@@ -24,7 +25,7 @@
         </div>
     </div>
     <section class="main-container">
-    <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">R&M Wikipedia</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -41,32 +42,52 @@
                     </div>
                 </div>
             </div>
-    </nav>
-    <div class="card-deck">
+        </nav>
+        <div class="card-deck">
             <div class="container">
                 <div class="row">
                     <div class="card col-6">
-                        <h1 class="display-4"> Lick and Morty </h1>
+                        <h1 class="display-4"> Rick and Morty </h1>
                         <p class="lead"> <img src="image" width="150" height="150"></p>
                         <hr class="my-4">
                         <div id="Profile">
-                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, alias cum pariatur debitis quod esse omnis nostrum rerum possimus sunt delectus et a! Deleniti corrupti dolores, eos aut blanditiis omnis?</p>
+                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, alias cum
+                                pariatur debitis quod esse omnis nostrum rerum possimus sunt delectus et a! Deleniti
+                                corrupti dolores, eos aut blanditiis omnis?</p>
+                        </div>
+                        <a class="btn btn-primary btn-lg joke-button" href="#" role="button">Joke</a>
                     </div>
-                    <a class="btn btn-primary btn-lg joke-button" href="#" role="button">Joke</a>
-                </div>
-            <div class="card col-6">
-                <div class="joke-box">
-                    <h1 class="display-4"> Jokes ! </h1>
-                    </br>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
-                        attention to featured content or information.</p>
+                    <div class="card col-6">
+                        <div class="joke-box">
+                            <h1 class="display-4"> Jokes ! </h1>
+                            </br>
+
+                            <!-- joke generator -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="morty-form">
+                                            <label for="exampleQuote">Generate a Rick and Morty Joke</label>
+                                        </div>
+                                        <br>
+                                        <button id="mortyBtn" class="button">I have something to say Morty!</button>
+
+                                        <ul id="mortyGroup" class="list-group mt-5">
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </section>
-<script></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
