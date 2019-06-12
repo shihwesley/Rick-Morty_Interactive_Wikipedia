@@ -41,11 +41,11 @@ $(document).ready(function(){
 
 
                     // Create content for card body
-                    $card_body.append(`<p class="card-text">STATUS: ${char_status}</p><hr>`);
-                    $card_body.append(`<p class="card-text">SPECIES: ${char_species}</p><hr>`);
-                    $card_body.append(`<p class="card-text">GENDER: ${char_gender}</p><hr>`);
-                    $card_body.append(`<p class="card-text">ORIGIN: ${char_origin}</p><hr>`);
-                    $card_body.append(`<p class="card-text">LAST<br>LOCATION: ${char_location}</p><hr>`);
+                            $card_body.append(`<p class="card-text">STATUS: ${char_status}</p><hr>`);
+                            $card_body.append(`<p class="card-text">SPECIES: ${char_species}</p><hr>`);
+                            $card_body.append(`<p class="card-text">GENDER: ${char_gender}</p><hr>`);
+                            $card_body.append(`<p class="card-text">ORIGIN: ${char_origin}</p><hr>`);
+                            $card_body.append(`<p class="card-text">LAST<br>LOCATION: ${char_location}</p><hr>`);
 
                     // Append card body to the card
                     $card.append($card_body);

@@ -7,10 +7,12 @@ section {
   background-image: url(../images/RickAndMorty-bg.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
   font-family: Comic Sans MS, Comic Sans, cursive;
+  text-align: center;
 }
 
 .navbar {
@@ -20,6 +22,9 @@ h1 {
 .navbar-toggler {
   color: white !important;
 }
+
+
+
 a {
   color: white;
 }
@@ -30,18 +35,27 @@ a {
 
 .card {
   background-color: #CEF6D8;
-  height: 572px;
-  width: 200%px;
-  overflow: auto;
+  height: 620px;
+  width: 300px;
+  padding: 0;
+  margin: 20px;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 5px;
 }
 
 .card-text {
-  font-size: 12px;
+  font-size: 14px ;
+   
 }
 
 
 .card-image-top {
   height: 250px;
+  width: 100% !important;
+  object-fit: cover;
 }
 
 .jumbotron {
@@ -67,4 +81,9 @@ a {
 
 .joke-button {
   width: 100px;
+  margin: auto;
+}
+
+.joke-box {
+  overflow-y:auto; 
 }
