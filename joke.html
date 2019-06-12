@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Document</title>
 </head>
 
@@ -24,7 +25,7 @@
         </div>
     </div>
     <section class="main-container">
-    <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">R&M Wikipedia</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -41,39 +42,33 @@
                     </div>
                 </div>
             </div>
-    </nav>
-    <div class="card-deck">
+        </nav>
+        <div class="card-deck">
             <div class="container">
                 <div class="row">
-                    <div class="card col-6">
-                        <h1 class="display-4"> Create Jokes! </h1>
+                    <div class="card col-6 joke-left">
+                        <h1 class="display-4"> Rick and Morty </h1>
                         <p class="lead"> <img src="./assets/images/rick-morty-jokepage.jpeg" width="500" height="200"></p>
                         <hr class="my-4">
                         <div id="Profile">
-                        <p class="lead">Try rickandmortyipsum instead of loremipsum! </p>
+                            <p class="docu-generator">You can generate jokes to click this button!</p>
+                        </div>
+                        <button id="mortyBtn" class="button jokebtn">I have something to say Morty!</button>
                     </div>
-                    <form class="form-inline">
-                            <div class="form-group mb-2">
-                            </div>
-                            <div class="form-group mx-sm-3 mb-2">
-                              <label for="inputPassword2" class="sr-only">No. of paragraph</label>
-                              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn btn-primary mb-2">Jokes!</button>
-                          </form>                    
-                </div>
-            <div class="card col-6">
-                <div class="joke-box">
-                    <h1 class="display-4"> Jokes ! </h1>
-                    </br>
-                    <p class="lead"><span id= "">span ID needed</span></p>
+                    <div class="card col-6">
+                        <div class="joke-box">
+                            <h1 class="display-4"> Jokes ! </h1>
+                            <p id="mortyGroup" class="list-group mt-5"></p>
+                        </div>        
+                    </div>
                 </div>
             </div>
+        
         </div>
-    </div>
-    </div>
-    </section>
-<script></script>
+        </div>
+        </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

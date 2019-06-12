@@ -83,3 +83,26 @@ a {
   width: 100px;
   margin: auto;
 }
+
+.joke-box {
+  overflow-y: auto;
+}
+
+.list-group-item {
+  background-color: #CEF6D8;
+}
+
+.lead {
+  margin: 0 auto;
+}
+
+.docu-generator {
+  font-size: 20px;
+  text-align: center;
+  font-style: bold;
+}
+
+.jokebtn {
+  width: 300px;
+  margin: 0 auto;
+}
