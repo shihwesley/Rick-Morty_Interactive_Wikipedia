@@ -31,7 +31,7 @@ $(document).ready(function(){
                     var char_origin = response.results[j].origin.name;
                     var char_location = response.results[j].location.name;
                     // Create Card column
-                    const $card = $('<div class="card col-4">');
+                    const $card = $('<div class="card">');
                     // Append Image
                     $card.append(`<img class="card-image-top" src="${char_img}" alt="${char_name}">`);
                     // Append Char name
@@ -41,11 +41,11 @@ $(document).ready(function(){
 
 
                     // Create content for card body
-                    $card_body.append(`<p class="card-text">STATUS: ${char_status}</p><hr>`);
-                    $card_body.append(`<p class="card-text">SPECIES: ${char_species}</p><hr>`);
-                    $card_body.append(`<p class="card-text">GENDER: ${char_gender}</p><hr>`);
-                    $card_body.append(`<p class="card-text">ORIGIN: ${char_origin}</p><hr>`);
-                    $card_body.append(`<p class="card-text">LAST<br>LOCATION: ${char_location}</p><hr>`);
+                            $card_body.append(`<p class="card-text">STATUS: ${char_status}</p><hr>`);
+                            $card_body.append(`<p class="card-text">SPECIES: ${char_species}</p><hr>`);
+                            $card_body.append(`<p class="card-text">GENDER: ${char_gender}</p><hr>`);
+                            $card_body.append(`<p class="card-text">ORIGIN: ${char_origin}</p><hr>`);
+                            $card_body.append(`<p class="card-text">LAST<br>LOCATION: ${char_location}</p><hr>`);
 
                     // Append card body to the card
                     $card.append($card_body);
