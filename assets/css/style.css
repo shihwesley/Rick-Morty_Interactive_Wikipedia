@@ -46,7 +46,7 @@ a {
   width: 300px;
   padding: 0;
   margin: 20px;
-  border-radius: 50px;
+  border-radius: 25px;
   border: solid 3px black;
   overflow:hidden;
 }
@@ -59,9 +59,7 @@ a {
 
 .card-text {
   font-size: 14px ;
-   
 }
-
 
 .card-image-top {
   height: 250px;
@@ -96,5 +94,6 @@ a {
 }
 
 .joke-box {
-  overflow-y:auto; 
+  overflow-y: auto;
+  
 }
