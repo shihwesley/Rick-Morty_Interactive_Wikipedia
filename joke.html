@@ -14,12 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-<<<<<<< HEAD
     <title>Joke R&M</title>
-=======
-
-    <title>Document</title>
->>>>>>> f24afd2f293d7be3877b43a539ca44029ad3d1bf
 </head>
 
 <body>
@@ -54,44 +49,25 @@
                 <div class="row">
                     <div class="card col-6">
                         <h1 class="display-4"> Rick and Morty </h1>
-                        <p class="lead"> <img src="image" width="150" height="150"></p>
+                        <p class="lead"> <img src="./assets/images/rick-morty-jokepage.jpeg" width="500" height="200"></p>
                         <hr class="my-4">
                         <div id="Profile">
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, alias cum
-                                pariatur debitis quod esse omnis nostrum rerum possimus sunt delectus et a! Deleniti
-                                corrupti dolores, eos aut blanditiis omnis?</p>
+                            <p class="docu-generator">You can generate jokes to click this button!</p>
                         </div>
-                        <a class="btn btn-primary btn-lg joke-button" href="#" role="button">Joke</a>
+                        <button id="mortyBtn" class="button jokebtn">I have something to say Morty!</button>
                     </div>
                     <div class="card col-6">
                         <div class="joke-box">
                             <h1 class="display-4"> Jokes ! </h1>
-                            </br>
-
-                            <!-- joke generator -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="morty-form">
-                                            <label for="exampleQuote">Generate a Rick and Morty Joke</label>
-                                        </div>
-                                        <br>
-                                        <button id="mortyBtn" class="button">I have something to say Morty!</button>
-
-                                        <ul id="mortyGroup" class="list-group mt-5">
-
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                            <p id="mortyGroup" class="list-group mt-5"></p>
+                        </div>        
                     </div>
                 </div>
             </div>
+        
         </div>
-    </section>
+        </div>
+        </section>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>

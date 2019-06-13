@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="character.html">
+            <link rel="stylesheet" href="dimension.html">
+            <link rel="stylesheet" href="episodes.html">
+            <link rel="stylesheet" href="gender.html">
+            <link rel="stylesheet" href="planet.html">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="./assets/css/style.css">
+        
+            <title>Document</title>
+        </head>
+        
+        <body>
+                <div class="jumbotron jumbotron-fluid">
+                        <div class="container"> 
+                            <h1 class ="display-4 jumbo-text title">Rick and Morty Wiki</h1>
+                            <p class="lead"></p>
+                        </div>
+
+                        
+                    </div>
+
+                    <section class="container-dimension">
+                            <nav class="navbar navbar-expand-lg">
+                                    <div class="container">
+                                        <a class="navbar-brand" href="./index.html">R&M Wikipedia</a>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                                            aria-contr  ols="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                                            <div class="navbar-nav">
+                                                <a class="nav-item nav-link" href="./joke.html">Jokes</a>
+                                                <a class="nav-item nav-link" href="./dimension.html">Dimension</a>
+                                                <a class="nav-item nav-link" href="#">Episodes</a>
+                                                <a class="nav-item nav-link" href="#">Gender</a>
+                                                <a class="nav-item nav-link" href="#">Planet</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </nav>
+                    
+                        <div class="contaier">
+                            <div class="row">
+                                <button class="collapsible"></button>
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <button class="collapsible"></button>
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <button class="collapsible"></button>
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <button class="collapsible"></button>
+                                    <div class="content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <button class="collapsible"></button>
+                                    <div class="content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                    <button class="collapsible"></button>
+                                    <div class="content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>  
+                        </div>
+                    </section>
+        
+                    <script>
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
+        
+                        for (i = 0; i < coll.length; i++) {
+                            coll[i].addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                var content = this.nextElementSibling;
+                                if (content.style.display === "block") {
+                                    content.style.display = "none";
+                                } else {
+                                    content.style.display = "block";
+                                }
+                            });
+                        }
+                    </script>
+</body>
+</html>
