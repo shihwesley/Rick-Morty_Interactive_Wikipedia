@@ -49,7 +49,6 @@ a {
   border-radius: 50px;
   border: solid 3px black;
   overflow:hidden;
-  overflow-y: auto;
 }
 
 .card-title {

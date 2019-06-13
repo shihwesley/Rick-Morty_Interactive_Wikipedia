@@ -110,7 +110,7 @@ $(document).ready(function () {
 //   //console.log(value);
 //   row = $("#cards > .row");
 //   console.log(row.length);
-//
+
 //   // Loop through all table rows, and hide those who don't match the search query
 //   for (let k = 0; k < row.length; k++) {
 //     td = row[k].getElementsByClassName("card")[0];
@@ -126,3 +126,4 @@ $(document).ready(function () {
 // });
 // })
 // ;
+// 
