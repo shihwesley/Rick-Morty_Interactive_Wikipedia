@@ -4,7 +4,7 @@
 $(document).ready(function () {
     var queryUrl = "http://loremricksum.com/api/?paragraphs=1&quotes=1"
     // var queryUrl2 = "http://loremricksum.com/api/?paragraphs=1&quotes=2"
-
+    
     $("#mortyBtn").on("click", function(event) {
         event.preventDefault()
         $.ajax({

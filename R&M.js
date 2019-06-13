@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     var character_URL = 'https://rickandmortyapi.com/api/character/';
 
     var pages = 25;
@@ -17,9 +17,9 @@ $(document).ready(function(){
             var row_counter = 0;
             const $row = $(`<div class="row" id = ${row_counter}>`);
 
-            for (let j = 0; j < response.results.length; j++){
+            for (let j = 0; j < response.results.length; j++) {
                 counter++;
-                if (counter === 5 ) {
+                if (counter === 5) {
                     counter = 0;
                     row_counter++;
                     // Grab data
@@ -41,11 +41,11 @@ $(document).ready(function(){
 
 
                     // Create content for card body
-                            $card_body.append(`<p class="card-text">STATUS: ${char_status}</p><hr>`);
-                            $card_body.append(`<p class="card-text">SPECIES: ${char_species}</p><hr>`);
-                            $card_body.append(`<p class="card-text">GENDER: ${char_gender}</p><hr>`);
-                            $card_body.append(`<p class="card-text">ORIGIN: ${char_origin}</p><hr>`);
-                            $card_body.append(`<p class="card-text">LAST<br>LOCATION: ${char_location}</p><hr>`);
+                    $card_body.append(`<p class="card-text">STATUS: ${char_status}</p><hr>`);
+                    $card_body.append(`<p class="card-text">SPECIES: ${char_species}</p><hr>`);
+                    $card_body.append(`<p class="card-text">GENDER: ${char_gender}</p><hr>`);
+                    $card_body.append(`<p class="card-text">ORIGIN: ${char_origin}</p><hr>`);
+                    $card_body.append(`<p class="card-text">LAST<br>LOCATION: ${char_location}</p><hr>`);
 
                     // Append card body to the card
                     $card.append($card_body);
@@ -78,4 +78,23 @@ $(document).ready(function(){
             }
         })
     }
+    //joke   Work in progress
+    $card.append(`<img class="card-image-top" src="${char_img}" alt="${char_name}">`);
+    var char_img = response.results[j].image;
+
+    for (let i = 0; i < 4; i++) {
+        var char_img = $("<div>");
+        char_img.attr("class")
+        $(".text").append(`<li class="list-group-item">${data[i]}</li>`)
+    }
+
+
+    function setNewImage() {
+        document.getElementById(img).src = "images"
+    }
+    function append() {
+        $("#").append("<img id")
+    }
+
+
 })
