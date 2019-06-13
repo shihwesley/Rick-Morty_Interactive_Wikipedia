@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     var character_URL = 'https://rickandmortyapi.com/api/character/';
 
     var pages = 25;
@@ -16,10 +16,13 @@ $(document).ready(function(){
             var counter = 0;
             var row_counter = 0;
             const $row = $(`<div class="row" id = ${row_counter}>`);
-
-            for (let j = 0; j < response.results.length; j++){
+            //quote selection for hover effect
+            var text = ["Pickle Rick!!!", "Squirrels Morty!", "Take 2 strokes off my golf game", "Summer!", "What is my Purpose? Pass me the butter.", "Not Beebo, he's our friend! He lead us to water!", "Existence is Pain", "In a world of Rick and Mortys': Be a Rick.", "Nobody Exists on Purpose. Nobody Belongs Anywhere. We're All Going to Die."]
+            for (let j = 0; j < response.results.length; j++) {
+                const newIndex = Math.floor(Math.random()*9)
+              
                 counter++;
-                if (counter === 5 ) {
+                if (counter === 5) {
                     counter = 0;
                     row_counter++;
                     // Grab data
@@ -31,12 +34,16 @@ $(document).ready(function(){
                     var char_origin = response.results[j].origin.name;
                     var char_location = response.results[j].location.name;
                     // Create Card column
-                    const $card = $('<div class="card col-4">');
+
+                    // add a imagecontainer class for my hover effect
+                    const $card = $('<div class="card col-4 imageContainer">');
                     // Append Image
                     $card.append(`<img class="card-image-top" src="${char_img}" alt="${char_name}">`);
                     // Append Char name
                     $card.append(`<h3 class="card-title">${char_name}</h3>`);
                     // Create cards content
+                    $card.append(`<div class="hoverCard"><p class="quoteText">${text[newIndex]}</p></div>`)
+                    // add my color div here 
                     const $card_body = $('<div class="card-body">');
 
 
@@ -76,26 +83,9 @@ $(document).ready(function(){
 
                 // console.log(char_name);
             }
+            
+           
         })
     }
-    //joke   Work in progress
-     $card.append(`<img class="card-image-top" src="${char_img}" alt="${char_name}">`);
-     var char_img = response.results[j].image;
-
-    for (let i = 0; i < 4; i++ ){
-        var char_img = $("<div>");
-        char_img.attr("class")
-        $(".text").append(`<li class="list-group-item">${data[i]}</li>`)
-    }
-
-
-    function setNewImage()
-    {
-        document.getElementById(img).src ="images"
-    }
-    function append(){
-        $("#").append("<img id")
-    }
-
 
 })
