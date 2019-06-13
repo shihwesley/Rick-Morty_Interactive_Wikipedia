@@ -3,7 +3,7 @@ body {
 
 }
 
-section {
+.main-container {
   background-image: url(../images/RickAndMorty-bg.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -19,6 +19,8 @@ h1 {
   margin-top: 0%;
   margin-bottom: 30px;
 }
+
+
 .navbar-toggler {
   color: white !important;
 }
@@ -27,6 +29,11 @@ h1 {
 
 a {
   color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .row {
@@ -39,11 +46,16 @@ a {
   width: 300px;
   padding: 0;
   margin: 20px;
+  border-radius: 50px;
+  border: solid 3px black;
+  overflow:hidden;
+  overflow-y: auto;
 }
 
 .card-title {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 10px;
+  background: rgba(0,0,0,0.3); 
 }
 
 .card-text {
@@ -82,4 +94,73 @@ a {
 .joke-button {
   width: 100px;
   margin: auto;
+}
+
+.joke-box {
+  overflow-y: auto;
+}
+
+.list-group-item {
+  background-color: #CEF6D8;
+  overflow: hidden;
+}
+
+.lead {
+  margin: 0 auto;
+}
+
+.docu-generator {
+  font-size: 20px;
+  text-align: center;
+  font-style: bold;
+}
+
+.jokebtn {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#mortyGroup {
+  overflow: hidden;
+}
+
+/* dimension page start*/
+
+.container-dimension {
+  background-image: url(../images/space-bg.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 1000px;
+}
+
+.collapsible {
+  cursor: pointer;
+  padding: 0;
+  height: 300px;
+  width: 300px;
+  background-image: url(../images/portal.gif);
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  vertical-align: middle;
+  margin-top: 20px 0 0 0;
+}
+
+.active, .collapsible:hover {
+  background-color: transparent;
+  border: none; 
+  padding: 0;
+  outline: 0;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 200px;
+  opacity: 0.5;
 }

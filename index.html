@@ -7,63 +7,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rick and Morty App</title>
     <link rel="stylesheet" href="character.html">
-    <link rel="stylesheet" href="dimension.html">
-    <link rel="stylesheet" href="episodes.html">
+    <link rel="stylesheet" href="Dimension.html">
+    <link rel="stylesheet" href="Episodes.html">
     <link rel="stylesheet" href="gender.html">
-    <link rel="stylesheet" href="planet.html">
+    <link rel="stylesheet" href="Planet.html">
+    <link rel="stylesheet" href="joke.html">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-
-
 </head>
 
 <body>
 
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container"> 
             <h1 class ="display-4 jumbo-text title">Rick and Morty Wiki</h1>
             <p class="lead"></p>
         </div>
     </div>
     <section class="main-content">
+<section class="main-container">
     <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">R&M Wikipedia</a>
+                <a class="navbar-brand" href="index.html">R&M Wikipedia</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-contr  ols="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">Character</a>
-                        <a class="nav-item nav-link" href="#">Dimension</a>
-                        <a class="nav-item nav-link" href="#">Episodes</a>
-                        <a class="nav-item nav-link" href="#">Gender</a>
-                        <a class="nav-item nav-link" href="#">Planet</a>
-                    </div>
+                    
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="#">Character</a>
+                            <a class="nav-item nav-link" href="Dimension.html">Dimension</a>
+                            <a class="nav-item nav-link" href="Episodes.html">Episodes</a>
+                            <a class="nav-item nav-link" href="#">Gender</a>
+                            <a class="nav-item nav-link" href="Planet.html">Planet</a>
+                            <a class="nav-item nav-link" href="joke.html">Jokes</a>
+                        </div>
                 </div>
             </div>
     </nav>
 
-    <div class="container" id="search">
-        <input class="form-control" id="myInput" type="text" placeholder="Search..">
-        <br>
-    </div>
-    <div class="card-deck">
-
-        <div class="container" id = "cards">
-
-
-
         <div class="row justify-content-center" id = "cards">
-
         </div>
     </div>
 </section>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="R&M.js"></script>
+
 </body>
 
 
