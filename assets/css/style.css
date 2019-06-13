@@ -115,6 +115,32 @@ a {
   font-style: bold;
 }
 
+.imageContainer {
+  position: relative;
+  width: 300px;
+}
+
+.hoverCard {
+  display: none;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 18px;
+  background-color: rgb(24, 170, 24);
+
+}
+
+.quoteText {
+  margin-top: 50%;
+}
+
+.imageContainer:hover .hoverCard {
+  display: block;
+=======
+
 .jokebtn {
   width: 300px;
   margin: 0 auto;
@@ -163,4 +189,5 @@ a {
   background-color: #f1f1f1;
   width: 200px;
   opacity: 0.5;
+
 }
