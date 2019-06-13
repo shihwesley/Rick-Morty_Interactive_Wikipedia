@@ -24,7 +24,7 @@ $(document).ready(function () {
   var counter = 0;
   var row_counter = 1;
 
-  var text = ["Pickle Rick!!!", "Squirrels Morty!", "Take 2 strokes off my golf game", "Summer!", "What is my Purpose? Pass me the butter.", "Not Beebo, he's our friend! He lead us to water!", "Existence is Pain", "In a world of Rick and Mortys': Be a Rick.", "Nobody Exists on Purpose. Nobody Belongs Anywhere. We're All Going to Die."]
+  //var text = ["Pickle Rick!!!", "Squirrels Morty!", "Take 2 strokes off my golf game", "Summer!", "What is my Purpose? Pass me the butter.", "Not Beebo, he's our friend! He lead us to water!", "Existence is Pain", "In a world of Rick and Mortys': Be a Rick.", "Nobody Exists on Purpose. Nobody Belongs Anywhere. We're All Going to Die."]
 
   for (let j = 1; j < 125; j++) {
     const $row = $(`<div class="row" id = ${j}>`);
@@ -47,6 +47,7 @@ $(document).ready(function () {
  //      });
  //    }
 
+  var quote_URL = 'http://loremricksum.com/api/?paragraphs=1&quotes=1';
   database.ref('/characters').on('value', function (snapshot) {
     snapshot.forEach(function (childSnap) {
       counter++;
@@ -65,7 +66,12 @@ $(document).ready(function () {
       const $card = $(`<div class="card imageContainer"  id = "${char_name}">`);
       // Append Image
       $card.append(`<img class="card-image-top" src="${char_img}" alt="${char_name}">`);
-      $card.append(`<div class="hoverCard"><p class="quoteText">${text[newIndex]}`);
+      $.ajax({
+        url: quote_URL,
+        method: 'GET'
+      }).then(function(data) {
+        $card.append(`<div class="hoverCard"><p class="quoteText">${data.data}`);
+      });
       // Append Char name
       $card.append(`<h3 class="card-title">${char_name}</h3>`);
       // Create cards content
@@ -73,7 +79,6 @@ $(document).ready(function () {
 
 
       // Create content for card body
-      $card_body.append(`<p class="card-text">ID: ${char_id}</p><hr>`);
       $card_body.append(`<p class="card-text">STATUS: ${char_status}</p><hr>`);
       $card_body.append(`<p class="card-text">SPECIES: ${char_species}</p><hr>`);
       $card_body.append(`<p class="card-text">GENDER: ${char_gender}</p><hr>`);
