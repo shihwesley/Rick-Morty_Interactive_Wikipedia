@@ -23,7 +23,9 @@ $(document).ready(function () {
   // var rick = [];
   var counter = 0;
   var row_counter = 1;
-  
+
+  var text = ["Pickle Rick!!!", "Squirrels Morty!", "Take 2 strokes off my golf game", "Summer!", "What is my Purpose? Pass me the butter.", "Not Beebo, he's our friend! He lead us to water!", "Existence is Pain", "In a world of Rick and Mortys': Be a Rick.", "Nobody Exists on Purpose. Nobody Belongs Anywhere. We're All Going to Die."]
+
   for (let j = 1; j < 125; j++) {
     const $row = $(`<div class="row" id = ${j}>`);
     $('#cards').append($row);
@@ -59,9 +61,11 @@ $(document).ready(function () {
       var char_location = char.location.name;
       //console.log(childSnap.val().character.name);
       // Create Card column
-      const $card = $(`<div class="card col-4"  id = "${char_name}">`);
+      const newIndex = Math.floor(Math.random()*9);
+      const $card = $(`<div class="card imageContainer"  id = "${char_name}">`);
       // Append Image
       $card.append(`<img class="card-image-top" src="${char_img}" alt="${char_name}">`);
+      $card.append(`<div class="hoverCard"><p class="quoteText">${text[newIndex]}`);
       // Append Char name
       $card.append(`<h3 class="card-title">${char_name}</h3>`);
       // Create cards content
