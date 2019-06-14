@@ -26,33 +26,46 @@ $(document).ready(function () {
 
   //var text = ["Pickle Rick!!!", "Squirrels Morty!", "Take 2 strokes off my golf game", "Summer!", "What is my Purpose? Pass me the butter.", "Not Beebo, he's our friend! He lead us to water!", "Existence is Pain", "In a world of Rick and Mortys': Be a Rick.", "Nobody Exists on Purpose. Nobody Belongs Anywhere. We're All Going to Die."]
 
-  for (let j = 1; j < 125; j++) {
+  for (let j = 1; j < 121; j++) {
     const $row = $(`<div class="row" id = ${j}>`);
     $('#cards').append($row);
   }
 
   //DO NOT DELETE THIS FOLLOWING COMMENT
- // for (let m = 0; m < 25; m++) {
+ // for (let m = 1; m < 25; m++) {
  //      var char_pages_URL = 'https://rickandmortyapi.com/api/character/?page=' + m;
  //      $.ajax({
  //        url: char_pages_URL,
  //        method: 'GET'
  //      }).then(function (response) {
- //        for (let g = 0; g < response.results.length; g++) {
- //          database.ref('characters/').push({
- //            character :  response.results[g]
+ //        for (let u = 0; u < 20; u++){
+ //          database.ref('/characters').push({
+ //            character :  response.results[u]
  //          });
  //        }
  //
+ //
  //      });
  //    }
-
+ //    for (let p = 1; p < 77; p++) {
+ //      var location_URL = 'https://rickandmortyapi.com/api/location/' + p;
+ //      $.ajax({
+ //        url: location_URL,
+ //        method: 'GET'
+ //      }).then(function (response) {
+ //        console.log(response);
+ //        database.ref('/locations').push({
+ //          location: response
+ //        });
+ //
+ //
+ //      });
+ //    }
   var quote_URL = 'http://loremricksum.com/api/?paragraphs=1&quotes=1';
   database.ref('/characters').on('value', function (snapshot) {
     snapshot.forEach(function (childSnap) {
       counter++;
       var char = childSnap.val().character;
-      var char_id = char.id;
       var char_name = char.name;
       var char_img = char.image;
       var char_status = char.status;
@@ -94,20 +107,45 @@ $(document).ready(function () {
     })
   });
 
-  $("#myInput").on("keyup", function () {
-    $('#cards').empty();
-    var value = $(this).val().toLowerCase();
-    database.ref('/characters').on('value', function (snapshot) {
-      snapshot.forEach(function (childSnap) {
-        const char = childSnap.val().character;
-        var char_name = char.name;
-        if (char_name.includes(value)) {
-          console.log(value);
-          console.log(char_name);
-        }
-      });
+  database.ref('/locations').on('value', function (snapshot) {
+    //console.log(snapshot);
+    var dimensions = [];
+    snapshot.forEach(function (childSnap) {
+      //console.log(childSnap.val());
+      dimensions.push(childSnap.val().location.dimension);
+
+      //console.log(dimen);
+
     });
-  });
+    var dimen  = _.uniq(dimensions);
+    console.log(dimen);
+    for ( let r = 0; r < dimen.length; r++){
+      console.log(dimen[r]);
+      const $container = $('<div class="container-hover floating">');
+      $container.append(`<img src="./assets/images/portal.gif" alt="${dimen[r]}" class="image">`);
+      //$container.append(`<p class="dimension-name">${dimen[r]}</p>`);
+      const $overlay = $('<div class="overlay"></div>');
+      $overlay.append(`<div class="text">${dimen[r]}</div>`);
+      $container.append($overlay);
+      $('.d').append($container);
+  };
+});
+
+
+  // $("#myInput").on("keyup", function () {
+  //   $('#cards').empty();
+  //   var value = $(this).val().toLowerCase();
+  //   database.ref('/characters').on('value', function (snapshot) {
+  //     snapshot.forEach(function (childSnap) {
+  //       const char = childSnap.val().character;
+  //       var char_name = char.name;
+  //       if (char_name.includes(value)) {
+  //         console.log(value);
+  //         console.log(char_name);
+  //       }
+  //     });
+  //   });
+  // });
 });
 // $("#myInput").on("keyup", function () {
 //   var input, filter, row_container, row, td, i, txtValue;
