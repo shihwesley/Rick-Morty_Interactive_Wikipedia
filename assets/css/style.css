@@ -49,17 +49,16 @@ a {
   border-radius: 50px;
   border: solid 3px black;
   overflow:hidden;
-  overflow-y: auto;
 }
 
 .card-title {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0;
   background: rgba(0,0,0,0.3); 
 }
 
 .card-text {
-  font-size: 14px ;
+  font-size: 12px ;
    
 }
 
@@ -91,15 +90,6 @@ a {
 
 /* joke page start */
 
-.joke-button {
-  width: 100px;
-  margin: auto;
-}
-
-.joke-box {
-  overflow-y: auto;
-}
-
 .list-group-item {
   background-color: #CEF6D8;
   overflow: hidden;
@@ -109,15 +99,56 @@ a {
   margin: 0 auto;
 }
 
+.display-4 {
+  margin-top: 20px;
+  margin-bottom: 30px !important;
+}
+
 .docu-generator {
   font-size: 20px;
   text-align: center;
   font-style: bold;
 }
 
+.imageContainer {
+  position: relative;
+  width: 300px;
+}
+
+.hoverCard {
+  display: none;
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 24px;
+  font-style: bold;
+  background-color: rgb(24, 170, 24);
+
+}
+
+.quoteText {
+  margin-top: 20%;
+  padding: 20px;
+}
+
+.imageContainer:hover .hoverCard {
+  display: block;
+}
+
+.mortbtn {
+  margin: 0 auto;
+}
+
 .jokebtn {
   width: 300px;
-  margin: 0 auto;
+}
+
+.resetbtn {
+  width: 100px;
+  margin-left: 20px;
 }
 
 #mortyGroup {
@@ -134,7 +165,7 @@ a {
   height: 1000px;
 }
 
-/* dafs */
+/* collapsible */
 
 .collapsible {
   cursor: pointer;
@@ -154,6 +185,7 @@ a {
 .active, .collapsible:hover {
   background-color: transparent;
   border: none; 
+  position: absolute;
   padding: 0;
   outline: 0;
 }
@@ -165,4 +197,56 @@ a {
   background-color: #f1f1f1;
   width: 200px;
   opacity: 0.5;
+
+}
+
+/* hover */
+
+.container-hover {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: transparent;
+}
+
+.container-hover:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dimension-name {
+  color: white;
+  font-size: 20px;
+  font-style: bold;
+  text-align: center;
 }
